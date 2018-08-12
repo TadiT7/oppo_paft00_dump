@@ -1,0 +1,28 @@
+<!-- This file is used by Exp Region: IR.  DO NOT MODIFY. -->
+<permissions>
+  <feature name="oppo.adb.needsimcard.manual" />
+  <feature name="oppo.systemui.show_noservice.when_nosimcard" />
+  <feature name="oppo.systemui.disable_simcard.icon_show" />
+  <feature name="oppo.systemui.force.operator_name" />
+  <feature name="oppo.systemui.force.operator_name.add_datatype" />
+  <feature name="oppo.system.cmcc.mp" />
+  <feature name="oppo.system.cmcc.protocol" />
+  <feature name="oppo.system.cmcc.filter" />
+  <feature name="oppo.systemui.cmcc.icon.hd" />
+  <feature name="oppo.keyguard.show.networkstatus" />
+  <feature name="oppo.browser.cmcc.home" />
+  <feature name="oppo.browser.cmcc" />
+  <feature name="oppo.common_center.lock.simcard" />
+  <feature name="oppo.simsettings.cmcc.simcard.priority" />  
+  <feature name="oppo.simsettings.show.dialog.primary_change" />   
+  <feature name="oppo.simsettings.network.connection.change" />    
+  <feature name="oppo.stk.launcher" /> 
+  <feature name="oppo.simsettings.not.show_simchange_dialog" />
+  <feature name="oppo.softsim.unsupport" />
+  <feature name="oppo.simsettings.set.usim.primary.slotid" />
+  <feature name="oppo.launcher.cmcc.mp" />
+  <feature name="oppo.operationmanual.cmcc.support" />
+  <feature name="oppo.settings.usb.not.support" />
+  <feature name="oppo.settings.showallanrs.not.support" />
+  <feature name="oppo.imputmethod.def.iflytek" />	
+</permissions>

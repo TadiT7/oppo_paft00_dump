@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- *******************************************************************************
+** File: com.google.android.maps.xml
+** VENDOR_EDIT
+** Copyright (C), 2008-2012, OPPO Mobile Comm Corp., Ltd
+**
+** Description:
+**     add Google MapView for GTS test
+**
+** Version: 1
+** Date created: 22:48:51,10/19/2017
+** Author: Yongyao.Song@PSW.NW.DATA
+**
+** *************************** Revision History: *****************************
+**  <author>    <data>     <desc>
+**
+************************************************************************************/
+-->
+
+<permissions>
+<!-- #ifndef VENDOR_EDIT -->
+<!-- Kevin@Swdp.Android.Input&Package, 2015/09/01, Modify for support cts and some apps use google maps libraray -->
+<!--
+
+    <library name="com.google.android.maps"
+            file="/system/framework/com.google.android.maps.jar" />
+
+-->
+<!-- #else  //VENDOR_EDIT -->
+    <library name="com.google.android.maps"
+            file="/system/framework/com.android.support.jar" />
+<!-- #endif //VENDOR_EDIT -->
+</permissions>

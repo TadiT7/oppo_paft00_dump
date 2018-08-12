@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<wifiromupdate>
+    <version>20161019</version>
+    <isOpen>1</isOpen>
+    <!-- WIFI CONNECT TEAM -->
+    <!-- WIFI CONNECT TEAM :WifiStateMachine.java -->
+    <CONNECT_LINK_FLAPPING_DEBOUNCE_MSEC>4000</CONNECT_LINK_FLAPPING_DEBOUNCE_MSEC>
+    <CONNECT_ROAM_GUARD_TIMER_MSEC>15000</CONNECT_ROAM_GUARD_TIMER_MSEC>
+    <CONNECT_OBTAINING_IP_ADDRESS_GUARD_TIMER_MSEC>40000</CONNECT_OBTAINING_IP_ADDRESS_GUARD_TIMER_MSEC>
+
+    <!-- WIFI CONNECT TEAM :WifiConfigStore.java -->
+    <CONNECT_DEFAULT_MAX_DHCP_RETRIES>9</CONNECT_DEFAULT_MAX_DHCP_RETRIES>
+    <CONNECT_ENABLE_REMOVE_NETWORK_WITH_WRONGKEY>true</CONNECT_ENABLE_REMOVE_NETWORK_WITH_WRONGKEY>
+
+    <!-- WIFI CONNECT TEAM :SupplicantStateTracker.java -->
+    <CONNECT_MAX_RETRIES_MANUAL_ASSOCIATION_REJECT>5</CONNECT_MAX_RETRIES_MANUAL_ASSOCIATION_REJECT>
+    <CONNECT_MAX_RETRIES_ON_AUTHENTICATION_FAILURE>1</CONNECT_MAX_RETRIES_ON_AUTHENTICATION_FAILURE>
+    <CONNECT_MAX_WRONG_KEY_COUNT>2</CONNECT_MAX_WRONG_KEY_COUNT>
+    <CONNECT_TIMEOUT_ASSOC_REJECT>15000</CONNECT_TIMEOUT_ASSOC_REJECT>
+    <CONNECT_TIMEOUT_MANUAL_CONNECT>80000</CONNECT_TIMEOUT_MANUAL_CONNECT>
+    <CONNECT_TIMEOUT_AUTO_CONNECT>20000</CONNECT_TIMEOUT_AUTO_CONNECT>
+    <CONNECT_TIMEOUT_AUTH_FAILURE>15000</CONNECT_TIMEOUT_AUTH_FAILURE>
+    <CONNECT_TIMEOUT_SELECT>9500</CONNECT_TIMEOUT_SELECT>
+    <CONNECT_TIMEOUT_P2P_CONNECTED_SELECT >14000</CONNECT_TIMEOUT_P2P_CONNECTED_SELECT>
+    <CONNECT_MAX_RETRIES_ON_ASSOCIATION_REJECT>12</CONNECT_MAX_RETRIES_ON_ASSOCIATION_REJECT>
+
+    <!-- WIFI CONNECT TEAM :Add for get wifiInfo permission white list -->
+    <CONNECT_WIFIINFO_PACKAGE>com.android.server.wifi,com.coloros.wifisecuredetect</CONNECT_WIFIINFO_PACKAGE>
+    <!-- WIFI NETWORK TEAM -->
+    <NETWORK_CHECK_INTERNET_AFTER_DRIVER_ROAMING>true</NETWORK_CHECK_INTERNET_AFTER_DRIVER_ROAMING>
+    <!-- WiFi.Network.internet.N18 873764 -->
+    <NETWORK_MTU>1460</NETWORK_MTU>
+    <NETWORK_MTU_SERVER>conn1.oppomobile.com,conn2.oppomobile.com,www.baidu.com,www.jd.com,www.taobao.com,www.qq.com</NETWORK_MTU_SERVER>
+
+    <!-- Rongzheng.tang@Connectivity.WiFi.Network.quality.FN5 -->
+    <!-- com.google.android.gms,  com.google.android.location -->
+    <!-- com.google.uid.shared -->
+    <NETWORK_SYSTEM_APP>com.google,com.android</NETWORK_SYSTEM_APP>
+    <NETWORK_LOCATION_APP>baidu.map,baidu.location,baidu.navi,BaiduMap,com.amap,com.autonavi,tencent.map,tencent.android.location,sogou.map,cld.navi</NETWORK_LOCATION_APP>
+    <NETWORK_BLACK_LIST>com.android.browser,com.imangi.templerun,com.wepie.snake,com.ztgame.bob,com.tencent.tmgp.sgame,com.kiloo.subwaysurf</NETWORK_BLACK_LIST>
+
+    <!-- Yuan.Huang@Connectivity.Wifi.Network.internet.N4, 2017/01/18, -->
+    <!-- Add for add default dns and adjust the order of dns servers -->
+    <NETWORK_DEFAULT_DNS>114.114.114.114</NETWORK_DEFAULT_DNS>
+    <NETWORK_INVALID_NS_THRESHOLD>2</NETWORK_INVALID_NS_THRESHOLD>
+
+    <!-- Wei.Wang@PSW.CN.WiFi.Network.internet.1072996, 2017/08/26,   -->
+    <!-- Add for [1072996],add romupdate function for  Handle gateway conflict-->
+    <NETWORK_HANDLE_GATEWAY_CONFLICT>true</NETWORK_HANDLE_GATEWAY_CONFLICT>
+
+
+
+    <!-- WIFI BASIC TEAM -->
+    <BASIC_WIFI_OPEN_TIME>300</BASIC_WIFI_OPEN_TIME>
+    <BASIC_SCAN_REJECT_COUNT>6</BASIC_SCAN_REJECT_COUNT>
+    <BASIC_SCAN_CMD_DOWN_COUNT>6</BASIC_SCAN_CMD_DOWN_COUNT>
+    <BASIC_FOOL_PROOF_ON>1</BASIC_FOOL_PROOF_ON>
+
+    <!-- WIFI POWER TEAM -->
+    <POWER_APP_SCAN_COUNT>10</POWER_APP_SCAN_COUNT>
+    <POWER_APP_SCAN_FREQ>1</POWER_APP_SCAN_FREQ>
+    <POWER_APP_DETECT_AND_KILL>true</POWER_APP_DETECT_AND_KILL>
+
+    <!-- Chuanye.Xu@PSW.CN.WiFi.Power.1039214, 2017/08/24, -->
+    <!-- Add for default AFP program convert from:
+    "!ether broadcast && !ip6 multicast && !ip broadcast && !dst net 224.0.0.251 && !dst net 224.0.0.252 && !dst net 239.255.255.250
+        && !dst portrange 137-139 && !ip[19]=255 && ! igmp && !stp && !ether proto 0xbeef && !(ether[12:2] < 0x600 && ether[14:2] = 0xaaaa
+        && (ether[18:2] = 0x000c || ether[20:2] = 0x2000 || ether[20:2] = 0x00c6 || ether[22:4] = 0x0001af81))" -->
+    <APF_PROGRAM>
+(000) ld       [2]&#x000A;
+(001) jeq      #0xffffffff      jt 2    jf 4&#x000A;
+(002) ldh      [0]&#x000A;
+(003) jeq      #0xffff          jt 58   jf 4&#x000A;
+(004) ldh      [12]&#x000A;
+(005) jeq      #0x86dd          jt 6    jf 15&#x000A;
+(006) ldb      [38]&#x000A;
+(007) jeq      #0xff            jt 58   jf 8&#x000A;
+(008) ldb      [20]&#x000A;
+(009) jeq      #0x84            jt 12   jf 10&#x000A;
+(010) jeq      #0x6             jt 12   jf 11&#x000A;
+(011) jeq      #0x11            jt 12   jf 42&#x000A;
+(012) ldh      [56]&#x000A;
+(013) jge      #0x89            jt 14   jf 42&#x000A;
+(014) jgt      #0x8b            jt 42   jf 58&#x000A;
+(015) jeq      #0x800           jt 16   jf 36&#x000A;
+(016) ld       [30]&#x000A;
+(017) jeq      #0x0             jt 58   jf 18&#x000A;
+(018) jeq      #0xffffffff      jt 58   jf 19&#x000A;
+(019) jeq      #0xe00000fb      jt 58   jf 20&#x000A;
+(020) jeq      #0xe00000fc      jt 58   jf 21&#x000A;
+(021) jeq      #0xeffffffa      jt 58   jf 22&#x000A;
+(022) ldb      [23]&#x000A;
+(023) jeq      #0x84            jt 26   jf 24&#x000A;
+(024) jeq      #0x6             jt 26   jf 25&#x000A;
+(025) jeq      #0x11            jt 26   jf 32&#x000A;
+(026) ldh      [20]&#x000A;
+(027) jset     #0x1fff          jt 32   jf 28&#x000A;
+(028) ldxb     4*([14]&amp;0xf)&#x000A;
+(029) ldh      [x + 16]&#x000A;
+(030) jge      #0x89            jt 31   jf 32&#x000A;
+(031) jgt      #0x8b            jt 32   jf 58&#x000A;
+(032) ldb      [33]&#x000A;
+(033) jeq      #0xff            jt 58   jf 34&#x000A;
+(034) ldb      [23]&#x000A;
+(035) jeq      #0x2             jt 58   jf 42&#x000A;
+(036) jeq      #0x806           jt 38   jf 37&#x000A;
+(037) jeq      #0x8035          jt 38   jf 42&#x000A;
+(038) ld       [38]&#x000A;
+(039) jeq      #0xe00000fb      jt 58   jf 40&#x000A;
+(040) jeq      #0xe00000fc      jt 58   jf 41&#x000A;
+(041) jeq      #0xeffffffa      jt 58   jf 42&#x000A;
+(042) ldh      [12]&#x000A;
+(043) jgt      #0x5dc           jt 46   jf 44&#x000A;
+(044) ldb      [14]&#x000A;
+(045) jeq      #0x42            jt 58   jf 46&#x000A;
+(046) ldh      [12]&#x000A;
+(047) jeq      #0xbeef          jt 58   jf 48&#x000A;
+(048) jge      #0x600           jt 59   jf 49&#x000A;
+(049) ldh      [14]&#x000A;
+(050) jeq      #0xaaaa          jt 51   jf 59&#x000A;
+(051) ldh      [18]&#x000A;
+(052) jeq      #0xc             jt 58   jf 53&#x000A;
+(053) ldh      [20]&#x000A;
+(054) jeq      #0x2000          jt 58   jf 55&#x000A;
+(055) jeq      #0xc6            jt 58   jf 56&#x000A;
+(056) ld       [22]&#x000A;
+(057) jeq      #0x1af81         jt 58   jf 59&#x000A;
+(058) ret      #0&#x000A;
+(059) ret      #262144
+    </APF_PROGRAM>
+
+</wifiromupdate>

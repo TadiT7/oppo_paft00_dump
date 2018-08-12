@@ -1,0 +1,14 @@
+#
+# ADDITIONAL_DEFAULT_PROPERTIES
+#
+security.perf_harden=1
+ro.allow.mock.location=0
+ro.adb.secure=1
+ro.secure=1
+ro.debuggable=0
+#
+# BOOTIMAGE_BUILD_PROPERTIES
+#
+ro.bootimage.build.date=Wed Aug 1 01:29:54 CST 2018
+ro.bootimage.build.date.utc=1533058194
+persist.sys.usb.config=none

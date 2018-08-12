@@ -1,0 +1,23 @@
+<!-- This file is auto-generated.  DO NOT MODIFY. -->
+<permissions>
+    <!-- Zhen.Yue@PSW.MM.Display.SF.Feature, 2018/03/28, Add for protect eyes -->
+    <feature name="oppo.eyeprotect.support" />
+    <!-- Zhen.Yue@PSW.MM.Display.SF.Feature, 2018/04/02, Add for roundcorner -->
+    <feature name="oppo.roundcorner.support" />
+    <!-- jie.hu@PSW.Multimedia.Display.Service.Feature, 2018/03/26, Add for Aod -->
+    <feature name="oppo.aod.support" />
+    <!-- jie.hu@PSW.Multimedia.Display.Service.Feature, 2018/06/09, Add for hqv -->
+    <feature name="oppo.hqv.feature.support" />
+    <!-- Changwei.Li@ROM.SDK, 2017/10/12, add support display compat-->
+    <feature name="oppo.display.compat.support" />
+    <!-- ZhiYong@Plf.Framework, 2018/01/08, add for oppo freeform mode -->
+    <feature name="oppo.freeform.support" />
+    <!-- gaoliang@Plf.LauncherCenter, 2017/03/14, add for launcher show the progress of downloading app from gamecenter and app store-->
+    <feature name="oppo.launcher.download.progress.support" />
+    <!-- Yanming.Wang@PSW.AD.Vibrator.LinerMotor.1360293, 2018/05/03, Add for liner Motor to support set the amplitude -->
+    <feature name="oppo.hardware.linermotor.support" />
+    <!-- caobing@Swdp.Shanghai, 2018/06/11, Add for ovs smartmic support on 17108 -->
+    <feature name="oppo.ovs.smartmic.support" />
+    <!-- Bin.Wang@ROM.Comm.USER1319422,2018/06/12, add for O-free (Smart Bluetooth Headset)-->
+    <feature name="oppo.common_center.bt.oppopods"/>
+</permissions>

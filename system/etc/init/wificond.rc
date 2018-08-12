@@ -1,0 +1,9 @@
+service wificond /system/bin/wificond
+    class main
+    user wifi
+    group wifi net_raw net_admin
+    # ifdef VENDOR_EDIT
+    # Laixin@PSW.CN.WiFi.Basic.Log.1370184, 2018/06/12
+    # Add for explict declare capabilitie
+    capabilities NET_ADMIN
+    # endif /* VENDOR_EDIT */

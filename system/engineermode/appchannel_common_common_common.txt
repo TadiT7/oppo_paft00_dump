@@ -1,0 +1,16 @@
+jdPreInstalledInfo.dat
+uconfig.ini
+pddpreinfo.dat
+com.baidu.searchbox.channel
+oppo_alipay_antibrush
+ydPreInstalledInfo.json
+amapconfig.ini
+mtconfig.ini
+oppo_ttmain.properties
+firmChannel.ini
+sjtbconfig.xml
+oppo_aweme_156_pre_install.config
+weibo_channel.txt
+config.properties
+xmlyconfig.ini
+wuba_channel

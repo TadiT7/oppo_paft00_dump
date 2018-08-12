@@ -1,0 +1,34 @@
+ak991x_dri_0.json,
+sdm845_ak991x_0.json,
+bmi160_0.json,
+sns_amd.json,
+sns_basic_gestures.json,
+sns_bring_to_ear.json,
+sns_cm.json,
+sns_device_orient.json,
+sns_diag_filter.json,
+sns_distance_bound.json,
+sns_facing.json,
+sns_fmv.json,
+sns_geomag_rv.json,
+sns_gyro_cal.json,
+sns_mag_cal.json,
+sns_pedometer.json,
+sns_rmd.json,
+sns_rotv.json,
+sns_smd.json,
+sns_multishake.json,
+sns_bring_to_ear.json,
+sns_dpc.json,
+sns_tilt.json,
+sns_tilt_to_wake.json,
+#ifdef VENDOR_EDIT
+#Fei.Mo@PSW.BSP.Sensor 2018-01-22, Add for oppo sensor
+sdm845_bmi160_0.json
+sdm845_stk3x3x_0.json
+stk3x3x_0.json
+sdm845_tsl2540.json
+tsl2540.json
+stk3x3x_1.json
+sdm845_stk3x3x_1.json
+#endif

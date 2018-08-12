@@ -1,0 +1,9 @@
+<!-- This file is used by Exp Region: IR.  DO NOT MODIFY. -->
+<permissions>
+  <feature name="oppo.ocloud.photo.sync" />
+  <feature name="oppo.common_center.wlan.assistant" />
+  <feature name="oppo.coloros.fake.bs" />
+  <feature name="oppo.softsim.ignore_data_setting"/>
+  <feature name="oppo.common_center.wifi.smart_connect"/>
+  <feature name="oppo.launcher.download.progress.support" />
+</permissions>

@@ -1,0 +1,6 @@
+com.shuqi.controller
+cn.cj.pe
+com.cmic.mmnes
+com.cmcc.cmvideo
+com.chinamobile.mcloud
+com.chinasofti.rcs

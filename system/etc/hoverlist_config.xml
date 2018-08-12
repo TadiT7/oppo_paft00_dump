@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='utf-8'?>
+<filter-conf>
+    <version>20180602</version>
+    <isOpen>1</isOpen>
+    <filter-name>hoverlist_config</filter-name>
+    <GestureConfing>
+        <gesture name="gesture_enable" value="true"/>
+        <gesture name="hover_enable" value="true"/>
+        <gesture name="gyro_for_miss_touch_static" value="30"/>
+        <gesture name="gyro_for_miss_touch_move" value="20"/>
+        <gesture name="gyro_buff" value="300"/>
+        <gesture name="acc_buff" value="5"/>
+        <gesture name="pos_gyro_buf" value="200"/>
+        <gesture name="pos_acc_buf" value="5"/>
+        <gesture name="pos_gyro_buf_for_far" value="300"/>
+        <gesture name="touch_position" value="5"/>
+        <gesture name="touch_gesture_far" value="5"/>
+        <gesture name="hover_gesture_near" value="5"/>
+        <gesture name="hover_del_pos_for_far" value="1.5"/>
+    </GestureConfing>
+    <HoverSupport>
+        <!-- OppoPhone;Hangouts;KakaoTalk;WhatsApp;Skype-->
+        <App  name="com.android.server.display.DisplayPowerController"  />
+        <App  name="com.oppo.engineermode" />
+        <App  name="com.oppo.gesturesensormanager" />
+        <!-- Phone -->
+        <App  name="com.android.incallui" />
+        <App  name="com.android.server.telecom" />
+        <App  name="com.tencent.mobileqq" />
+        <App  name="com.tencent.mm" />
+        <App  name="com.tencent.minihd.qq" />
+        <!--Telegram -->
+        <App  name="org.telegram.messenger" />
+        <!--KakaoTalk-->
+        <App  name="com.kakao.talk.vox.manager" />
+        <!--whatsapp-->
+        <App  name="com.whatsapp.util" />
+        <!--viber-->
+        <App  name="com.viber.voip" />
+        <!--imo-->
+        <App  name="com.imo.android.imoim.av.ui" />
+        <!-- qq phone -->
+        <App  name="kiz" />
+        <App  name="kgt" />
+        <!-- qq hd-->
+        <App  name="cgf" />
+        <!--dingding-->
+        <App  name="cry" />
+        <!--Hangouts-->
+        <App  name="dgt" />
+        <App  name="com.immomo.momo" />
+        <App  name="im.yixin" />
+        <!-- App  name="com.eg.android.AlipayGphone" / -->
+        <!-- App  name="com.alipay.android.phone" / -->
+        <App  name="com.oppo.proximitydemo1A" />
+        <App  name="com.oppo.proximitydemo1" />
+
+        <!-- imo gratis video oproepen -->
+        <App  name="jp.naver.voip.android.command" />
+
+        <!-- imo gratis video oproepen -->
+        <App  name="com.imo.android.imoim.av.ui.AudioActivity" />
+
+        <!-- Telegram -->
+        <App  name="org.telegram.messenger.MediaController" />
+
+        <!-- Skype - gratis chatberichten en video-oproepen -->
+        <App  name="com.android.server.display.DisplayPowerController"/>
+
+        <!-- BBM - Free Calls & Messages -->
+        <App  name="com.android.server.display.DisplayPowerController" />
+
+        <!-- hike: Payments, Hide Chat, Stickers, Calling -->
+        <App  name="com.bsb.hike.media" />
+
+        <!-- QQ International - Chat & Call -->
+        <App  name="com.tencent.mobileqq.activity.aio"/>
+
+        <!-- LINE Lite: Free Messages-->
+        <App  name="com.linecorp.linelite.app.module.voip.notification.AndromedaCallService"/>
+
+        <!-- Signal Private Messenger -->
+        <App  name="org.thoughtcrime.securesms.audio.AudioSlidePlayer" />
+
+        <!-- icq gratis videogesprekken -->
+        <App  name="com.icq.mobile.controller.ptt.f" />
+        <App  name="ru.mail.voip2.OsMonitor" />
+        <App  name="ru.mail.util.ae" />
+        <App  name="com.icq.mobile.controller.ptt.f" />
+
+        <!-- JioChat: Jio KBC Play Along-->
+        <App  name="com.jiochat.jiochatapp.manager.cw" />
+        <App  name="com.jiochat.jiochatapp.ui.activitys.avchat.ac" />
+
+        <!-- Plus Messenger -->
+        <App  name="org.telegram.messenger.MediaController" />
+
+        <!-- Hiya - Caller ID & Block -->
+        <App  name="com.android.server.display.DisplayPowerController" />
+
+        <!-- WePhone - free phone calls & cheap calls -->
+        <App  name="com.android.server.display.DisplayPowerController" />
+
+        <!-- QQ -->
+        <App  name="com.tencent.mobileqq.activity.aio.MediaPlayerManager" />
+        <App  name="com.android.server.display.DisplayPowerController" />
+
+        <!-- Coco -->
+        <App  name="com.instanza.cocovoice.activity.chat" />
+
+        <!-- 国内 -->
+        <App  name="com.snapchat.android" />
+        <!-- yuwan -->
+        <App  name="cn.longmaster.pengpeng" />
+        <!-- chucp -->
+        <App  name="me.ddkj.cp" />
+
+        <!-- tantan -->
+        <App  name="l.ajz" />
+
+        <!-- fenshendashi -->
+        <App  name="com.qihoo.magic" />
+
+        <!-- yunzhijia -->
+        <App  name="com.kdweibo.client" />
+
+        <!-- didi -->
+        <App  name="com.sdu.didi.psnger" />
+
+        <!-- yiban -->
+        <App  name="com.yiban.app" />
+
+        <!-- anjuke -->
+        <App  name="com.anjuke.android.app" />
+        <!-- sould -->
+        <App  name="cn.soulapp.android.im" />
+        <!-- baidu  -->
+        <App  name="com.baidu.tbadk" />
+        <!-- ganji  -->
+        <App  name="com.android.gmacs" />
+        <!-- xianyu  -->
+        <App  name="com.taobao.fleamarket" />
+        <!-- blued  -->
+        <App  name="com.soft.blued.ui.msg.MsgChattingFragment" />
+        <!-- weixin inc version  -->
+        <App  name="eqi" />
+    </HoverSupport>
+
+</filter-conf>

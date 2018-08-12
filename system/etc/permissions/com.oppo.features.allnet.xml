@@ -1,0 +1,7 @@
+<!-- This file is auto-generated.  DO NOT MODIFY. -->
+<permissions>
+    <feature name="oppo.all.client" />
+    <feature name="oppo.all.client_7_5" />
+    <!-- Xiang.Gui@PSW.NW.REG, 2017/11/23 add for feature lte_lte-->
+    <feature name="oppo.all.client_lte_lte" />
+</permissions>

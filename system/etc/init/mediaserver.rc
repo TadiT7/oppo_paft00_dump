@@ -1,0 +1,12 @@
+service media /system/bin/mediaserver
+    class main
+    user media
+#ifndef VENDOR_EDIT
+#Xiaopeng.Hu@PSW.MM.MediaServer.Image.1311962, 2018/06/08
+#Add for MM List control heif picture MultiThread decoder
+    #group audio camera inet net_bt net_bt_admin net_bw_acct drmrpc mediadrm
+#else /*VENDOR_EDIT*/
+    group audio camera inet net_bt net_bt_admin net_bw_acct drmrpc mediadrm readproc
+#endif /*VENDOR_EDIT*/
+    ioprio rt 4
+    writepid /dev/cpuset/foreground/tasks /dev/stune/foreground/tasks

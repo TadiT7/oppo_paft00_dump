@@ -1,0 +1,14 @@
+<!-- This file is used by Exp Region: IR.  DO NOT MODIFY. -->
+<permissions>
+  <feature name="oppo.system.cmcc.protocol" />
+  <feature name="oppo.system.cmcc.filter" />
+  <feature name="oppo.browser.cmcc" />
+  <feature name="oppo.systemui.cmcc.icon.hd" />
+  <feature name="oppo.keyguard.show.networkstatus" />
+  <feature name="oppo.common_center.lock.simcard" />
+  <feature name="oppo.simsettings.cmcc.simcard.priority" />  
+  <feature name="oppo.simsettings.show.dialog.primary_change" />  
+  <feature name="oppo.simsettings.not.show_simchange_dialog" /> 
+  <feature name="oppo.simsettings.set.usim.primary.slotid" />  
+  <feature name="oppo.operationmanual.cmcc.support" />
+</permissions>

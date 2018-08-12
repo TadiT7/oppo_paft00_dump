@@ -1,0 +1,3 @@
+com.baidu.input_oppo
+com.mobiletools.systemhelper
+com.oppo.ctautoregist

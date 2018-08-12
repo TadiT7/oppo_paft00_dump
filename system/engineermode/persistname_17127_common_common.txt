@@ -1,0 +1,2 @@
+com.netease.mail
+cn.wps.moffice_eng
